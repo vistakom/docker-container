@@ -7,7 +7,7 @@ This is collection of docker container script that will help out team to create 
 The puspose of this script is to create vlan network inside docker that can use by container to connect with other container. With this vlan, docker container can running with dedicated ip address instead bind host ip address
 
 ### 0️⃣2️⃣-container_mysql.sh
-Tis script will create database mysql container with specific container name, ip address and root password. so you must define variable below base on your env.
+This script will create database mysql container with specific container name, ip address and root password. so you must define variable below base on your env.
 ```bash
 containerName="mysql.mylab.local"  ## Change this
 containerIP="192.168.43.21"        ## Change this
@@ -15,8 +15,10 @@ containerNetwork="mylab_net"       ## Change this base on vlan network script
 rootPass="s3crEt"                  ## Change this
 ```
 After execute the script, you can access database with mysql client (mysql workbench, heidisql, etc) and create new user for testing.
-### 0️⃣2️⃣-
-### 0️⃣3️⃣-
+
+### 0️⃣3️⃣-container_mssql.sh
+This script will create database ms sql server container with specific container name, ip address and sa password. so you must define variable below base on your env. Container will be accessible with port 1433.
+
 ### 0️⃣4️⃣-
 ### 0️⃣5️⃣-
 ### 0️⃣6️⃣-
