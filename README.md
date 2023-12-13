@@ -18,6 +18,11 @@ After execute the script, you can access database with mysql client (mysql workb
 
 ### 0️⃣3️⃣-container_mssql.sh
 This script will create database ms sql server container with specific container name, ip address and sa password. so you must define variable below base on your env. Container will be accessible with port 1433.
+After execute script, we can access database from client.
+
+This example hot to access database from win 11:
+- install sqlcmd package with powershell command: `winget install sqlcmd`
+- access database with command line: `sqlcmd -S <ip_address>,1433 -U SA -P "<saPassword>"`
 
 ### 0️⃣4️⃣-
 ### 0️⃣5️⃣-
